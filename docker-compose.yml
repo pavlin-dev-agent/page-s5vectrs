@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.page-s5vectrs.rule=Host(`page-s5vectrs.pavlin.dev`)"
+      - "traefik.http.routers.page-s5vectrs.rule=Host(`kalina.pavlin.dev`)"
       - "traefik.http.routers.page-s5vectrs.entrypoints=web"
       - "traefik.http.services.page-s5vectrs.loadbalancer.server.port=3000"
     networks:
